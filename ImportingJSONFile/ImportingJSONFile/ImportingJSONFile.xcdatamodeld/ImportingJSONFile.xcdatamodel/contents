@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event">
+        <attribute name="menuItemBriefDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Item Brief Description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemCategory" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Menu Category"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemCategoryOrderIncludes" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Order Includes"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Item Description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Item Name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemNumber" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Item Number"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemPrice" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="menuItemSideOrder" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Side Order"/>
+            </userInfo>
+        </attribute>
+        <attribute name="recordID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Record Number"/>
+            </userInfo>
+        </attribute>
+        <attribute name="timeStamp" optional="YES" attributeType="Date">
+            <userInfo>
+                <entry key="ReadableFieldName" value="Date Modified"/>
+            </userInfo>
+        </attribute>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="261" positionY="189" width="128" height="195"/>
+    </elements>
+</model>

@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C41FB0FD192EF9AA00284553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB0FC192EF9AA00284553 /* Foundation.framework */; };
+		C41FB0FF192EF9AA00284553 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB0FE192EF9AA00284553 /* CoreGraphics.framework */; };
+		C41FB101192EF9AA00284553 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB100192EF9AA00284553 /* UIKit.framework */; };
+		C41FB103192EF9AA00284553 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB102192EF9AA00284553 /* CoreData.framework */; };
+		C41FB109192EF9AA00284553 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C41FB107192EF9AA00284553 /* InfoPlist.strings */; };
+		C41FB10B192EF9AA00284553 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB10A192EF9AA00284553 /* main.m */; };
+		C41FB10F192EF9AA00284553 /* MHSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB10E192EF9AA00284553 /* MHSAppDelegate.m */; };
+		C41FB112192EF9AA00284553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41FB110192EF9AA00284553 /* Main.storyboard */; };
+		C41FB115192EF9AA00284553 /* ImportingJSONFile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C41FB113192EF9AA00284553 /* ImportingJSONFile.xcdatamodeld */; };
+		C41FB118192EF9AA00284553 /* MHSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB117192EF9AA00284553 /* MHSMasterViewController.m */; };
+		C41FB11B192EF9AA00284553 /* MHSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB11A192EF9AA00284553 /* MHSDetailViewController.m */; };
+		C41FB11D192EF9AA00284553 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41FB11C192EF9AA00284553 /* Images.xcassets */; };
+		C41FB124192EF9AA00284553 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB123192EF9AA00284553 /* XCTest.framework */; };
+		C41FB125192EF9AA00284553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB0FC192EF9AA00284553 /* Foundation.framework */; };
+		C41FB126192EF9AA00284553 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB100192EF9AA00284553 /* UIKit.framework */; };
+		C41FB127192EF9AA00284553 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FB102192EF9AA00284553 /* CoreData.framework */; };
+		C41FB12F192EF9AA00284553 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C41FB12D192EF9AA00284553 /* InfoPlist.strings */; };
+		C41FB131192EF9AA00284553 /* ImportingJSONFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB130192EF9AA00284553 /* ImportingJSONFileTests.m */; };
+		C41FB13B192EF9D200284553 /* KababishMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = C41FB13A192EF9D200284553 /* KababishMenu.json */; };
+		C41FB13E192F996000284553 /* KababishMenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB13D192F996000284553 /* KababishMenuObject.m */; };
+		C41FB14E193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB14D193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.m */; };
+		C41FB151193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB150193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m */; };
+		C41FB15419329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FB15319329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m */; };
+		C44FBF2419352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FBF2319352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.m */; };
+		C44FBF2719352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FBF2619352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.m */; };
+		C4D8B3271938D22600A835E7 /* KababishMenu4.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D8B3261938D22600A835E7 /* KababishMenu4.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C41FB128192EF9AA00284553 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C41FB0F1192EF9AA00284553 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41FB0F8192EF9AA00284553;
+			remoteInfo = ImportingJSONFile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C41FB0F9192EF9AA00284553 /* ImportingJSONFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportingJSONFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41FB0FC192EF9AA00284553 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C41FB0FE192EF9AA00284553 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C41FB100192EF9AA00284553 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C41FB102192EF9AA00284553 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C41FB106192EF9AA00284553 /* ImportingJSONFile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImportingJSONFile-Info.plist"; sourceTree = "<group>"; };
+		C41FB108192EF9AA00284553 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C41FB10A192EF9AA00284553 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C41FB10C192EF9AA00284553 /* ImportingJSONFile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImportingJSONFile-Prefix.pch"; sourceTree = "<group>"; };
+		C41FB10D192EF9AA00284553 /* MHSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSAppDelegate.h; sourceTree = "<group>"; };
+		C41FB10E192EF9AA00284553 /* MHSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSAppDelegate.m; sourceTree = "<group>"; };
+		C41FB111192EF9AA00284553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C41FB114192EF9AA00284553 /* ImportingJSONFile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImportingJSONFile.xcdatamodel; sourceTree = "<group>"; };
+		C41FB116192EF9AA00284553 /* MHSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSMasterViewController.h; sourceTree = "<group>"; };
+		C41FB117192EF9AA00284553 /* MHSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSMasterViewController.m; sourceTree = "<group>"; };
+		C41FB119192EF9AA00284553 /* MHSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSDetailViewController.h; sourceTree = "<group>"; };
+		C41FB11A192EF9AA00284553 /* MHSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSDetailViewController.m; sourceTree = "<group>"; };
+		C41FB11C192EF9AA00284553 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C41FB122192EF9AA00284553 /* ImportingJSONFileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImportingJSONFileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41FB123192EF9AA00284553 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C41FB12C192EF9AA00284553 /* ImportingJSONFileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImportingJSONFileTests-Info.plist"; sourceTree = "<group>"; };
+		C41FB12E192EF9AA00284553 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C41FB130192EF9AA00284553 /* ImportingJSONFileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportingJSONFileTests.m; sourceTree = "<group>"; };
+		C41FB13A192EF9D200284553 /* KababishMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KababishMenu.json; sourceTree = "<group>"; };
+		C41FB13C192F996000284553 /* KababishMenuObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KababishMenuObject.h; sourceTree = "<group>"; };
+		C41FB13D192F996000284553 /* KababishMenuObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KababishMenuObject.m; sourceTree = "<group>"; };
+		C41FB14C193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHSMasterViewController+ImportLocalJSONFileToCoreData.h"; sourceTree = "<group>"; };
+		C41FB14D193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHSMasterViewController+ImportLocalJSONFileToCoreData.m"; sourceTree = "<group>"; };
+		C41FB14F193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.h"; sourceTree = "<group>"; };
+		C41FB150193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m"; sourceTree = "<group>"; };
+		C41FB15219329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.h"; sourceTree = "<group>"; };
+		C41FB15319329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m"; sourceTree = "<group>"; };
+		C44FBF2219352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHSMasterViewController+RestoreCoreDataFromJSONFile.h"; sourceTree = "<group>"; };
+		C44FBF2319352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHSMasterViewController+RestoreCoreDataFromJSONFile.m"; sourceTree = "<group>"; };
+		C44FBF2519352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHSMasterViewController+BackupCoreDataToJSONFile.h"; sourceTree = "<group>"; };
+		C44FBF2619352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHSMasterViewController+BackupCoreDataToJSONFile.m"; sourceTree = "<group>"; };
+		C4D8B3261938D22600A835E7 /* KababishMenu4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KababishMenu4.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C41FB0F6192EF9AA00284553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB0FF192EF9AA00284553 /* CoreGraphics.framework in Frameworks */,
+				C41FB103192EF9AA00284553 /* CoreData.framework in Frameworks */,
+				C41FB101192EF9AA00284553 /* UIKit.framework in Frameworks */,
+				C41FB0FD192EF9AA00284553 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41FB11F192EF9AA00284553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB124192EF9AA00284553 /* XCTest.framework in Frameworks */,
+				C41FB127192EF9AA00284553 /* CoreData.framework in Frameworks */,
+				C41FB126192EF9AA00284553 /* UIKit.framework in Frameworks */,
+				C41FB125192EF9AA00284553 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C41FB0F0192EF9AA00284553 = {
+			isa = PBXGroup;
+			children = (
+				C41FB104192EF9AA00284553 /* ImportingJSONFile */,
+				C41FB12A192EF9AA00284553 /* ImportingJSONFileTests */,
+				C41FB0FB192EF9AA00284553 /* Frameworks */,
+				C41FB0FA192EF9AA00284553 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C41FB0FA192EF9AA00284553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB0F9192EF9AA00284553 /* ImportingJSONFile.app */,
+				C41FB122192EF9AA00284553 /* ImportingJSONFileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C41FB0FB192EF9AA00284553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB0FC192EF9AA00284553 /* Foundation.framework */,
+				C41FB0FE192EF9AA00284553 /* CoreGraphics.framework */,
+				C41FB100192EF9AA00284553 /* UIKit.framework */,
+				C41FB102192EF9AA00284553 /* CoreData.framework */,
+				C41FB123192EF9AA00284553 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C41FB104192EF9AA00284553 /* ImportingJSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB13A192EF9D200284553 /* KababishMenu.json */,
+				C4D8B3261938D22600A835E7 /* KababishMenu4.json */,
+				C41FB10D192EF9AA00284553 /* MHSAppDelegate.h */,
+				C41FB10E192EF9AA00284553 /* MHSAppDelegate.m */,
+				C41FB110192EF9AA00284553 /* Main.storyboard */,
+				C41FB116192EF9AA00284553 /* MHSMasterViewController.h */,
+				C41FB117192EF9AA00284553 /* MHSMasterViewController.m */,
+				C41FB119192EF9AA00284553 /* MHSDetailViewController.h */,
+				C41FB11A192EF9AA00284553 /* MHSDetailViewController.m */,
+				C41FB13C192F996000284553 /* KababishMenuObject.h */,
+				C41FB13D192F996000284553 /* KababishMenuObject.m */,
+				C41FB11C192EF9AA00284553 /* Images.xcassets */,
+				C41FB113192EF9AA00284553 /* ImportingJSONFile.xcdatamodeld */,
+				C41FB105192EF9AA00284553 /* Supporting Files */,
+				C41FB14C193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.h */,
+				C41FB14D193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.m */,
+				C41FB14F193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.h */,
+				C41FB150193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m */,
+				C41FB15219329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.h */,
+				C41FB15319329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m */,
+				C44FBF2519352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.h */,
+				C44FBF2619352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.m */,
+				C44FBF2219352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.h */,
+				C44FBF2319352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.m */,
+			);
+			path = ImportingJSONFile;
+			sourceTree = "<group>";
+		};
+		C41FB105192EF9AA00284553 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB106192EF9AA00284553 /* ImportingJSONFile-Info.plist */,
+				C41FB107192EF9AA00284553 /* InfoPlist.strings */,
+				C41FB10A192EF9AA00284553 /* main.m */,
+				C41FB10C192EF9AA00284553 /* ImportingJSONFile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C41FB12A192EF9AA00284553 /* ImportingJSONFileTests */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB130192EF9AA00284553 /* ImportingJSONFileTests.m */,
+				C41FB12B192EF9AA00284553 /* Supporting Files */,
+			);
+			path = ImportingJSONFileTests;
+			sourceTree = "<group>";
+		};
+		C41FB12B192EF9AA00284553 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C41FB12C192EF9AA00284553 /* ImportingJSONFileTests-Info.plist */,
+				C41FB12D192EF9AA00284553 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C41FB0F8192EF9AA00284553 /* ImportingJSONFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41FB134192EF9AA00284553 /* Build configuration list for PBXNativeTarget "ImportingJSONFile" */;
+			buildPhases = (
+				C41FB0F5192EF9AA00284553 /* Sources */,
+				C41FB0F6192EF9AA00284553 /* Frameworks */,
+				C41FB0F7192EF9AA00284553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImportingJSONFile;
+			productName = ImportingJSONFile;
+			productReference = C41FB0F9192EF9AA00284553 /* ImportingJSONFile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C41FB121192EF9AA00284553 /* ImportingJSONFileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41FB137192EF9AA00284553 /* Build configuration list for PBXNativeTarget "ImportingJSONFileTests" */;
+			buildPhases = (
+				C41FB11E192EF9AA00284553 /* Sources */,
+				C41FB11F192EF9AA00284553 /* Frameworks */,
+				C41FB120192EF9AA00284553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C41FB129192EF9AA00284553 /* PBXTargetDependency */,
+			);
+			name = ImportingJSONFileTests;
+			productName = ImportingJSONFileTests;
+			productReference = C41FB122192EF9AA00284553 /* ImportingJSONFileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C41FB0F1192EF9AA00284553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MHS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Maher Suboh";
+				TargetAttributes = {
+					C41FB121192EF9AA00284553 = {
+						TestTargetID = C41FB0F8192EF9AA00284553;
+					};
+				};
+			};
+			buildConfigurationList = C41FB0F4192EF9AA00284553 /* Build configuration list for PBXProject "ImportingJSONFile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C41FB0F0192EF9AA00284553;
+			productRefGroup = C41FB0FA192EF9AA00284553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C41FB0F8192EF9AA00284553 /* ImportingJSONFile */,
+				C41FB121192EF9AA00284553 /* ImportingJSONFileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C41FB0F7192EF9AA00284553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB11D192EF9AA00284553 /* Images.xcassets in Resources */,
+				C41FB109192EF9AA00284553 /* InfoPlist.strings in Resources */,
+				C41FB112192EF9AA00284553 /* Main.storyboard in Resources */,
+				C41FB13B192EF9D200284553 /* KababishMenu.json in Resources */,
+				C4D8B3271938D22600A835E7 /* KababishMenu4.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41FB120192EF9AA00284553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB12F192EF9AA00284553 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C41FB0F5192EF9AA00284553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB15419329CB300284553 /* MHSDetailViewController+CreateJSONNodeFromCodeDataRecord.m in Sources */,
+				C44FBF2419352E94007C8728 /* MHSMasterViewController+RestoreCoreDataFromJSONFile.m in Sources */,
+				C41FB13E192F996000284553 /* KababishMenuObject.m in Sources */,
+				C41FB151193298AB00284553 /* MHSDetailViewController+ImportRemoteJSONFileAndDisplayDetail.m in Sources */,
+				C41FB14E193294FA00284553 /* MHSMasterViewController+ImportLocalJSONFileToCoreData.m in Sources */,
+				C41FB10B192EF9AA00284553 /* main.m in Sources */,
+				C44FBF2719352F25007C8728 /* MHSMasterViewController+BackupCoreDataToJSONFile.m in Sources */,
+				C41FB11B192EF9AA00284553 /* MHSDetailViewController.m in Sources */,
+				C41FB115192EF9AA00284553 /* ImportingJSONFile.xcdatamodeld in Sources */,
+				C41FB10F192EF9AA00284553 /* MHSAppDelegate.m in Sources */,
+				C41FB118192EF9AA00284553 /* MHSMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41FB11E192EF9AA00284553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41FB131192EF9AA00284553 /* ImportingJSONFileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C41FB129192EF9AA00284553 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C41FB0F8192EF9AA00284553 /* ImportingJSONFile */;
+			targetProxy = C41FB128192EF9AA00284553 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C41FB107192EF9AA00284553 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C41FB108192EF9AA00284553 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C41FB110192EF9AA00284553 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C41FB111192EF9AA00284553 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C41FB12D192EF9AA00284553 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C41FB12E192EF9AA00284553 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C41FB132192EF9AA00284553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C41FB133192EF9AA00284553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C41FB135192EF9AA00284553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImportingJSONFile/ImportingJSONFile-Prefix.pch";
+				INFOPLIST_FILE = "ImportingJSONFile/ImportingJSONFile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C41FB136192EF9AA00284553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImportingJSONFile/ImportingJSONFile-Prefix.pch";
+				INFOPLIST_FILE = "ImportingJSONFile/ImportingJSONFile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C41FB138192EF9AA00284553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImportingJSONFile.app/ImportingJSONFile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImportingJSONFile/ImportingJSONFile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ImportingJSONFileTests/ImportingJSONFileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C41FB139192EF9AA00284553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImportingJSONFile.app/ImportingJSONFile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImportingJSONFile/ImportingJSONFile-Prefix.pch";
+				INFOPLIST_FILE = "ImportingJSONFileTests/ImportingJSONFileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C41FB0F4192EF9AA00284553 /* Build configuration list for PBXProject "ImportingJSONFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41FB132192EF9AA00284553 /* Debug */,
+				C41FB133192EF9AA00284553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41FB134192EF9AA00284553 /* Build configuration list for PBXNativeTarget "ImportingJSONFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41FB135192EF9AA00284553 /* Debug */,
+				C41FB136192EF9AA00284553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41FB137192EF9AA00284553 /* Build configuration list for PBXNativeTarget "ImportingJSONFileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41FB138192EF9AA00284553 /* Debug */,
+				C41FB139192EF9AA00284553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C41FB113192EF9AA00284553 /* ImportingJSONFile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C41FB114192EF9AA00284553 /* ImportingJSONFile.xcdatamodel */,
+			);
+			currentVersion = C41FB114192EF9AA00284553 /* ImportingJSONFile.xcdatamodel */;
+			path = ImportingJSONFile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C41FB0F1192EF9AA00284553 /* Project object */;
+}
